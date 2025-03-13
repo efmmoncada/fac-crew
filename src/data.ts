@@ -1,376 +1,252 @@
+type Team = "Electricians" | "Grounds" | "Carpenters" | "Movers" | "HVAC" | "Plumbers" | "Locksmith" | "Management"; 
+
+
 export type EmployeeInfo = {
   headshotURL: string;
   name: string;
   title: string;
-  ext: number;
+  team: Team
   email: string;
-  assistant: string;
-  duties: string[];
 };
 
 export const employees: EmployeeInfo[] = [
   {
-    headshotURL: "/haghighi.jpg",
-    name: "Saideh Haghighi Khochkhou",
-    title: "Operations Officer",
-    ext: 41336,
-    email: "haghighs@hsd.k12.or.us",
-    assistant: "Emmanuel Moncada",
-    duties: [],
-  },
-  {
-    headshotURL: "/petersond.jpg",
-    name: "Dave Peterson",
-    title: "Executive Director of Facilities",
-    ext: 41322,
-    email: "petersod@hsd.k12.or.us",
-    assistant: "Sydney Larrison",
-    duties: [],
-  },
-  {
-    headshotURL: "/hicksl.jpg",
-    name: "Lisa Hicks",
-    title: "Supervisor - Facilities & Maintenance",
-    ext: 41332,
-    email: "hicksl@hsd.k12.or.us",
-    assistant: "Sydney Larrison",
-    duties: [],
-  },
-  {
-    headshotURL: "/moncadae.jpg",
-    name: "Emmanuel Moncada",
-    title: "Technology Integration",
-    ext: 60424,
-    email: "moncadae@hsd.k12.or.us",
-    assistant: "",
-    duties: [
-      "CPR & First Aid Classes",
-      "HSTAT/SIRC Forms",
-      "Vector Training Platform Support",
-    ],
-  },
-  {
-    headshotURL: "/larrisons.jpg",
     name: "Sydney Larrison",
-    title: "Department Admin Support 3",
-    ext: 41321,
+    title: "Department Administrative Support 3",
+    team: "Management",
     email: "larrisos@hsd.k12.or.us",
-    assistant: "",
-    duties: [
-      "District-wide inspections",
-      "Facilities & TSSF Purchasing",
-      "Graduation/HSD Festival",
-      "Summer Crew",
-      "Teacher Moves",
-    ],
+    headshotURL: "/larrisos.jpg"
   },
   {
-    headshotURL: "/rayborns.jpg",
+    name: "Lisa Hicks",
+    title: "Supervisor - Facilities",
+    team: "Management",
+    email: "hicksl@hsd.k12.or.us",
+    headshotURL: "/hicksl.jpg"
+  },
+  {
     name: "Summer Rayborn",
-    title: "Dept. Admin Support 2",
-    ext: 41346,
+    title: "Department Administrative Support 2",
+    team: "Management",
     email: "rayborns@hsd.k12.or.us",
-    assistant: "",
-    duties: ["Incident IQ Facilities Work Order Tickets"],
+    headshotURL: "/rayborns.jpg"
   },
   {
-    headshotURL: "/riosa.jpg",
-    name: "Adela Rios",
-    title: "Manager - Emergency and Disaster Preparedness",
-    ext: 41327,
-    email: "riosa@hsd.k12.or.us",
-    assistant: "",
-    duties: [
-      "Fire/Earthquake compliance",
-      "Safety Plans & Monthly Document Reviews and questions",
-      "SRP (Standard Response Protocol",
-      "Reunification",
-      "Strike Teams",
-      "Student Incident Reports via Vector Incident Tracking",
-      "Vector Compliance",
-      "AED Support",
-      "Evac Chair Support",
-      "Crossing Gaurd Supplies",
-    ],
+    name: "Jeffrey Reed",
+    title: "Groundskeeper 1",
+    team: "Grounds",
+    email: "reedj@hsd.k12.or.us",
+    headshotURL: "/reedj.jpg"
   },
   {
-    headshotURL: "/yellandj.jpg",
+    name: "Leonell Andrade",
+    title: "Groundskeeper 1",
+    team: "Grounds",
+    email: "andradel@hsd.k12.or.us",
+    headshotURL: "/andradel.jpg"
+  },
+  {
+    name: "Juan Delgado Pizano",
+    title: "Groundskeeper 1",
+    team: "Grounds",
+    email: "delgadoj@hsd.k12.or.us",
+    headshotURL: "/delgadoj.jpg"
+  },
+  {
+    name: "Raymond Abad",
+    title: "Groundskeeper 1",
+    team: "Grounds",
+    email: "abadr@hsd.k12.or.us",
+    headshotURL: "/abadr.jpg"
+  },
+  {
+    name: "Edward Kehm",
+    title: "Groundskeeper 1",
+    team: "Grounds",
+    email: "kehme@hsd.k12.or.us",
+    headshotURL: "/kehme.jpg"
+  },
+  {
+    name: "Ramiro Arreola Avila",
+    title: "Groundskeeper 1",
+    team: "Grounds",
+    email: "arreolar@hsd.k12.or.us",
+    headshotURL: "/arreolar.jpg"
+  },
+  {
+    name: "Fabian Gonzalez Magana",
+    title: "Groundskeeper 1",
+    team: "Grounds",
+    email: "gonzalef@hsd.k12.or.us",
+    headshotURL: "/gonzalef.jpg"
+  },
+  {
+    name: "Bradley Hess",
+    title: "Groundskeeper 1",
+    team: "Grounds",
+    email: "hessb@hsd.k12.or.us",
+    headshotURL: "/hessb.jpg"
+  },
+  {
+    name: "Nathan Rosales",
+    title: "Groundskeeper 1",
+    team: "Grounds",
+    email: "rosalesn@hsd.k12.or.us",
+    headshotURL: "/rosalesn.jpg"
+  },
+  {
+    name: "Carlos Delorenza",
+    title: "Groundskeeper 1",
+    team: "Grounds",
+    email: "delorenc@hsd.k12.or.us",
+    headshotURL: "/delorenc.jpg"
+  },
+  {
+    name: "Matthew Wolf",
+    title: "Groundskeeper 2",
+    team: "Grounds",
+    email: "wolfma@hsd.k12.or.us",
+    headshotURL: "/wolfma.jpg"
+  },
+  {
+    name: "Darrell Fields",
+    title: "Groundskeeper 3",
+    team: "Grounds",
+    email: "fieldsd@hsd.k12.or.us",
+    headshotURL: "/fieldsd.jpg"
+  },
+  {
+    name: "Sanford Sutherland",
+    title: "Groundskeeper 3",
+    team: "Grounds",
+    email: "sutherls@hsd.k12.or.us",
+    headshotURL: "/sutherls.jpg"
+  },
+  {
+    name: "Peter Hrdlicka",
+    title: "Groundskeeper 3 - Irrigation and Wetland",
+    team: "Grounds",
+    email: "hrdlickp@hsd.k12.or.us",
+    headshotURL: "/hrdlickp.jpg"
+  },
+  {
+    name: "Robert Keplinger",
+    title: "Maintenance 2",
+    team: "Carpenters",
+    email: "keplingr@hsd.k12.or.us",
+    headshotURL: "/keplingr.jpg"
+  },
+  {
+    name: "Daniel Collien",
+    title: "Maintenance 2",
+    team: "HVAC",
+    email: "colliend@hsd.k12.or.us",
+    headshotURL: "/colliend.jpg"
+  },
+  {
+    name: "Edward Buck",
+    title: "Maintenance 2",
+    team: "Carpenters",
+    email: "bucke@hsd.k12.or.us",
+    headshotURL: "/bucke.jpg"
+  },
+  {
+    name: "David Delplanche",
+    title: "Maintenance 2",
+    team: "Carpenters",
+    email: "delplada@hsd.k12.or.us",
+    headshotURL: "/delplada.jpg"
+  },
+  {
+    name: "Kevin Brito",
+    title: "Maintenance 2",
+    team: "Electricians",
+    email: "britok@hsd.k12.or.us",
+    headshotURL: "/britok.jpg"
+  },
+  {
+    name: "Michael Russ",
+    title: "Maintenance 2",
+    team: "Carpenters",
+    email: "russm@hsd.k12.or.us",
+    headshotURL: "/russm.jpg"
+  },
+  {
+    name: "Wayne Cree",
+    title: "Maintenance 2",
+    team: "Carpenters",
+    email: "creew@hsd.k12.or.us",
+    headshotURL: "/creew.jpg"
+  },
+  {
+    name: "Erick Chavez-Garcia",
+    title: "Maintenance 2",
+    team: "HVAC",
+    email: "chavezge@hsd.k12.or.us",
+    headshotURL: "/chavezge.jpg"
+  },
+  {
+    name: "Raul De La Torre Martinez",
+    title: "Maintenance 2",
+    team: "Plumbers",
+    email: "delatorr@hsd.k12.or.us",
+    headshotURL: "/delatorr.jpg"
+  },
+  {
+    name: "John Meador",
+    title: "Maintenance 4",
+    team: "Electricians",
+    email: "meadorj@hsd.k12.or.us",
+    headshotURL: "/meadorj.jpg"
+  },
+  {
+    name: "Ronald Nearing",
+    title: "Maintenance 4",
+    team: "Plumbers",
+    email: "nearingr@hsd.k12.or.us",
+    headshotURL: "/nearingr.jpg"
+  },
+  {
+    name: "Daniel Hyde",
+    title: "Maintenance 4",
+    team: "Locksmith",
+    email: "hyded@hsd.k12.or.us",
+    headshotURL: "/hyded.jpg"
+  },
+  {
+    name: "Nico Geerling",
+    title: "Maintenance 4",
+    team: "HVAC",
+    email: "geerlinn@hsd.k12.or.us",
+    headshotURL: "/geerlinn.jpg"
+  },
+  {
+    name: "Keith Baldwin",
+    title: "Maintenance Foreman",
+    team: "HVAC",
+    email: "baldwink@hsd.k12.or.us",
+    headshotURL: "/baldwink.jpg"
+  },
+  {
     name: "Jordan Yelland",
     title: "Supervisor - Electrical Systems",
-    ext: 60429,
+    team: "Electricians",
     email: "yellandj@hsd.k12.or.us",
-    assistant: "",
-    duties: [
-      "Lighting Outages",
-      "Power Outages",
-      "Tripped Breakers", 
-      "Elevators", 
-      "Damaged/Loose Wiring", 
-      "Generators",
-      "Solar Generation Issues"
-    ],
+    headshotURL: "/yellandj.jpg"
   },
   {
-    headshotURL: "/hockingm.jpg",
-    name: "Mia Hocking",
-    title: "Manager - Resource Conservation",
-    ext: 41324,
-    email: "hockinmi@hsd.k12.or.us",
-    assistant: "",
-    duties: [
-      "Building Performance Management (Energy Star Cert.",
-      "Curriculum & Classroom Support re: Resource Conservation",
-      "Oregon Green Schools",
-      "Waste Management",
-      "Recycling Programs",
-      "Surplus Supplies",
-      "Equiptment and Teacher Moves",
-    ],
+    name: "Servando Cortes",
+    title: "Warehouse 2",
+    team: "Movers",
+    email: "cortess@hsd.k12.or.us",
+    headshotURL: "/cortess.jpg"
   },
   {
-    headshotURL: "/ericksonl.jpg",
-    name: "Lisa Erickson",
-    title: "Manager - Security Services",
-    ext: 41325,
-    email: "ericksli@hsd.k12.or.us",
-    assistant: "",
-    duties: [
-      "Law Enforcement Liaison/School Resource Officer Contacts",
-      "Threat Assessments/Sexual Incident Response Committee (SIRC's)",
-      "Public Safety Issues",
-      "Campus/Night Security Management",
-      "Lockout/Lockdown Drills",
-      "Trespassings",
-      "School Traffic Flow assistance",
-    ],
-  },
-  {
-    headshotURL: "/salmeronh.png",
-    name: "Hugo Salmeron",
-    title: "Specialist - Public Safety Systems",
-    ext: 41344,
-    email: "salmeroh@hsd.k12.or.us",
-    assistant: "",
-    duties: [
-      "Access Control System",
-      "Regular School Day Door Schedules",
-      "Camera System",
-      "Video Requests",
-      "Intrusion Alarm System",
-      "Radios",
-      "Lockout/Lockdown Drills",
-      "Contractors",
-      "Keys",
-    ],
-  },
-  {
-    headshotURL: "/wenzloffw.jpg",
-    name: "Will Wenzloff",
-    title: "Supervisor - Environmental Health & Safety",
-    ext: 41345,
-    email: "wenzlofw@hsd.k12.or.us",
-    assistant: "",
-    duties: [
-      "Asbestos",
-      "District Grounds",
-      "Indoor Air Quality",
-      "Integrated Pest Management (IPM)",
-      "Lead Testing",
-      "Playground Safety",
-      "Radon Testing",
-    ],
-  },
-  {
-    headshotURL: "/larar.jpg",
-    name: "Ray Lara",
-    title: "Supervisor - Custodial Services",
-    ext: 41338,
-    email: "larar@hsd.k12.or.us",
-    assistant: "Sandra Heredia",
-    duties: [
-      "Custodial: Oversee daily operations",
-      "Hiring",
-      "Investigation Support",
-      "Policies & Procedures",
-      "Custodian Training & Support",
-      "Custodial Supply Orders",
-      "Oversee Facilities District Warehouse",
-      "Evaluation Support",
-      "Site visits",
-    ],
-  },
-  {
-    headshotURL: "/roedeln.jpg",
-    name: "Nate Roedel",
-    title: "Executive Director of Nutrition Services",
-    ext: 41461,
-    email: "roedeln@hsd.k12.or.us",
-    assistant: "",
-    duties: [],
-  },
-  {
-    headshotURL: "/hatfieldc.jpg",
-    name: "Carol Hatfield",
-    title: "Executive Director of Transportation",
-    ext: 41100,
-    email: "hatfielc@hsd.k12.or.us",
-    assistant: "",
-    duties: [],
-  },
-  {
-    headshotURL: "/heredias.jpg",
-    name: "Sandra Heredia",
-    title: "Dept. Admin Support 3 - Custodial",
-    ext: 41331,
-    email: "heredias@hsd.k12.or.us",
-    assistant: "",
-    duties: [
-      "Custodial: Absences/Substitute Coverage",
-      "Building Coverage for Events",
-      "Overtime Scheduling",
-      "ePARs",
-      "Uniform Shirts",
-      "Cintas",
-      "Custodial Supplies Invoice Processing",
-      "SDS Sheets Upload",
-      "Custodial Exception Timesheets",
-    ],
-  },
-  {
-    headshotURL: "/perryl.jpg",
-    name: "Laura Perry",
-    title: "Supervisor - Nutrition Services",
-    ext: 41460,
-    email: "perryl@hsd.k12.or.us",
-    assistant: "",
-    duties: [
-      "Supper Program",
-      "Catering",
-      "Support kitchens of CHS/HHS Feeder Schools",
-      "Headstart/Pre-K Programs",
-    ],
-  },
-  {
-    headshotURL: "/wildenborgj.jpg",
-    name: "Jason Wildenborg",
-    title: "Manager - Transportation",
-    ext: 41114,
-    email: "wildenbj@hsd.k12.or.us",
-    assistant: "",
-    duties: ["Support North Terminal Staff & Oversee Daily Operations", "Shop"],
-  },
-  {
-    headshotURL: "/petrickr.jpg",
-    name: "Rian Petrick",
-    title: "Director of Extracurricular Services & Athletics",
-    ext: 41333,
-    email: "petrickr@hsd.k12.or.us",
-    assistant: "",
-    duties: [
-      "After School Athletics & Activities - ES/MS",
-      "Liaison for Hillsboro Parks & Rec",
-      "STEAM Coach",
-      "Outdoor School",
-      "Coordinates with HS Athletic Directors & Activities Coordinators (OSAA)",
-    ],
-  },
-  {
-    headshotURL: "/drolettey.jpg",
-    name: "Yvette Drolette",
-    title: "Supervisor - Nutrition Services",
-    ext: 41473,
-    email: "droletty@hsd.k2.or.us",
-    assistant: "",
-    duties: [
-      "USDA Food Programs",
-      "Food Allergy Meal Accommodations",
-      "Menu Information",
-      "Support Kitchens of GHS/LHS feeder Schools",
-      "Summer Meal Program",
-      "After School Snacks"
-    ],
-  },
-  {
-    headshotURL: "/fornshellm.jpg",
-    name: "Mike Fornshell",
-    title: "Manager - Transportation",
-    ext: 41111,
-    email: "fornshem@hsd.k2.or.us",
-    assistant: "",
-    duties: ["Support Main Terminal Staff & Oversee Daily Operation"],
-  },
-  {
-    headshotURL: "/mcmilland.jpg",
-    name: "Denise McMillan",
-    title: "Dept. Admin Support 3 - Facilities Use, Athletics & Activities",
-    ext: 41343,
-    email: "mcmillad@hsd.k2.or.us",
-    assistant: "",
-    duties: [
-      "Athletics/Activities Stipends",
-      "Door Schedules for After-hours & Weekends",
-      "Facilitron Access/Reservations",
-      "Field Light Schedules",
-    ],
-  },
-  {
-    headshotURL: "/turcottej.jpg",
-    name: "Jon Turcotte",
-    title: "Supervisor - Nutrition Services Warehouse & Distribution",
-    ext: 41335,
-    email: "turcottj@hsd.k12.or.us",
-    assistant: "",
-    duties: [
-      "Maintenance of Kitchen Equipment",
-      "Coordinate Nutrition Services Delivery Fleet",
-      "Fridge & Freezer Security Alarm",
-      "Vending Machine Management",
-    ],
-  },
-  {
-    headshotURL: "/mcfallsd.jpg",
-    name: "Debbie McFalls",
-    title: "Supervisor - Transportation",
-    ext: 41116,
-    email: "mcfallsd@hsd.k2.or.us",
-    assistant: "",
-    duties: [
-      "Glencoe/Hilhi Feeders: Gen Ed & Sped",
-      "Training",
-      "Bus Recording & Safety",
-      "Bus Referrals",
-    ],
-  },
-  {
-    headshotURL: "/morenol.jpg",
-    name: "Leticia Moreno",
-    title: "Dept. Admin Support 1",
-    ext: 41337,
-    email: "morenol@hsd.k2.or.us",
-    assistant: "",
-    duties: ["Grant Projects", "ES/MS Program Athletics/Activities"],
-  },
-  {
-    headshotURL: "/petitte.jpg",
-    name: "Elizabeth Petitt",
-    title: "Specialist - Nutrition Services",
-    ext: 60645,
-    email: "petitte@hsd.k12.or.us",
-    assistant: "",
-    duties: ["After School Supper Program (CACFP)"],
-  },
-  {
-    headshotURL: "/reeset.jpg",
-    name: "Todd Reese",
-    title: "Supervisor - Transportation",
-    ext: 41131,
-    email: "reeset@hsd.k2.or.us",
-    assistant: "",
-    duties: [
-      "Century/Liberty Feeders: Gen Ed & Sped",
-      "Training",
-      "Bus Recording & Safety",
-      "Bus Referrals",
-    ],
-  },
+    name: "Juan Baeza",
+    title: "Warehouse 2",
+    team: "Movers",
+    email: "baezaj@hsd.k12.or.us",
+    headshotURL: "/baezaj.jpg"
+  }
 ];
+

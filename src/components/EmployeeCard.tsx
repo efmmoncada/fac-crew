@@ -19,10 +19,8 @@ export default function EmployeeCard({
   headshotURL,
   name,
   email,
-  assistant,
   title,
-  ext,
-  duties,
+  team
 }: Props) {
   return (
     <Card className="p-4 justify-between">
@@ -36,18 +34,12 @@ export default function EmployeeCard({
           <h2 className="font-bold">{name}</h2>
           <p className="italic">{title}</p>
           <p>
-            Ext. {ext} |{" "}
-            <Link isExternal href={`mailto:${email}`}>
-              {email}
-            </Link>
-          </p>
-          <p className={`${assistant === "" ? "invisible" : ""}`}>
-            Assistant: {assistant}
+            Team: {team}
           </p>
         </div>
       </CardHeader>
-      {duties.length > 0 && <Divider />}
-      <CardBody className="min-h-8">{formatDuties(duties)}</CardBody>
+     
+      {/* <CardBody className="min-h-8">{formatDuties(duties)}</CardBody> */}
     </Card>
   );
 }
