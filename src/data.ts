@@ -1,4 +1,4 @@
-type Team = "Electricians" | "Grounds" | "Carpenters" | "Movers" | "HVAC" | "Plumbers" | "Locksmith" | "Management"; 
+type Team = "Electricians" | "Grounds" | "Carpenters" | "Movers" | "HVAC" | "Plumbers" | "Locksmith" | "Management";
 
 
 export type EmployeeInfo = {
@@ -32,11 +32,11 @@ export const employees: EmployeeInfo[] = [
     headshotURL: "/rayborns.jpg"
   },
   {
-    name: "Jeffrey Reed",
+    name: "Eddie Sauceda",
     title: "Groundskeeper 1",
     team: "Grounds",
-    email: "reedj@hsd.k12.or.us",
-    headshotURL: "/reedj.jpg"
+    email: "saucedae@hsd.k12.or.us",
+    headshotURL: "/saucedae.png"
   },
   {
     name: "Leonell Andrade",
@@ -79,13 +79,6 @@ export const employees: EmployeeInfo[] = [
     team: "Grounds",
     email: "gonzalef@hsd.k12.or.us",
     headshotURL: "/gonzalef.jpg"
-  },
-  {
-    name: "Bradley Hess",
-    title: "Groundskeeper 1",
-    team: "Grounds",
-    email: "hessb@hsd.k12.or.us",
-    headshotURL: "/hessb.jpg"
   },
   {
     name: "Nathan Rosales",
@@ -221,13 +214,6 @@ export const employees: EmployeeInfo[] = [
     headshotURL: "/geerlinn.jpg"
   },
   {
-    name: "Keith Baldwin",
-    title: "Maintenance Foreman",
-    team: "HVAC",
-    email: "baldwink@hsd.k12.or.us",
-    headshotURL: "/baldwink.jpg"
-  },
-  {
     name: "Jordan Yelland",
     title: "Supervisor - Electrical Systems",
     team: "Electricians",
@@ -241,12 +227,4 @@ export const employees: EmployeeInfo[] = [
     email: "cortess@hsd.k12.or.us",
     headshotURL: "/cortess.jpg"
   },
-  {
-    name: "Juan Baeza",
-    title: "Warehouse 2",
-    team: "Movers",
-    email: "baezaj@hsd.k12.or.us",
-    headshotURL: "/baezaj.jpg"
-  }
 ];
-
