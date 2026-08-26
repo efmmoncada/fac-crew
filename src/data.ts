@@ -1,230 +1,284 @@
 type Team = "Electricians" | "Grounds" | "Carpenters" | "Movers" | "HVAC" | "Plumbers" | "Locksmith" | "Management";
 
-
 export type EmployeeInfo = {
   headshotURL: string;
   name: string;
   title: string;
-  team: Team
+  team: Team;
   email: string;
+  reportsTo?: string; // email of manager; omit for the top of the chart
 };
 
 export const employees: EmployeeInfo[] = [
   {
-    name: "Sydney Larrison",
-    title: "Department Administrative Support 3",
+    name: "Dave Peterson",
+    title: "Executive Director of Facilities",
     team: "Management",
-    email: "larrisos@hsd.k12.or.us",
-    headshotURL: "/larrisos.jpg"
+    email: "petersod@hsd.k12.or.us",
+    headshotURL: "petersod.png",
   },
+  // {
+  //   name: "Sydney Larrison",
+  //   title: "Department Administrative Support 3",
+  //   team: "Management",
+  //   email: "larrisos@hsd.k12.or.us",
+  //   headshotURL: "/larrisos.jpg",
+  //   reportsTo: "petersod@hsd.k12.or.us",
+  // },
   {
     name: "Lisa Hicks",
-    title: "Supervisor - Facilities",
+    title: "Facilities Manager",
     team: "Management",
     email: "hicksl@hsd.k12.or.us",
-    headshotURL: "/hicksl.jpg"
+    headshotURL: "/hicksl.jpg",
+    reportsTo: "petersod@hsd.k12.or.us",
   },
-  {
-    name: "Summer Rayborn",
-    title: "Department Administrative Support 2",
-    team: "Management",
-    email: "rayborns@hsd.k12.or.us",
-    headshotURL: "/rayborns.jpg"
-  },
+  // {
+  //   name: "Summer Rayborn",
+  //   title: "Department Administrative Support 2",
+  //   team: "Management",
+  //   email: "rayborns@hsd.k12.or.us",
+  //   headshotURL: "/rayborns.jpg",
+  //   reportsTo: "hicksl@hsd.k12.or.us",
+  // },
   {
     name: "Jordan Yelland",
-    title: "Supervisor - Electrical Systems",
+    title: "Electrical Systems Manager",
     team: "Electricians",
     email: "yellandj@hsd.k12.or.us",
-    headshotURL: "/yellandj.jpg"
+    headshotURL: "/yellandj.jpg",
+    reportsTo: "petersod@hsd.k12.or.us",
   },
   {
     name: "Kevin Brito",
     title: "Maintenance 2",
     team: "Electricians",
     email: "britok@hsd.k12.or.us",
-    headshotURL: "/britok.jpg"
+    headshotURL: "/britok.jpg",
+    reportsTo: "yellandj@hsd.k12.or.us",
   },
   {
     name: "John Meador",
     title: "Maintenance 4",
     team: "Electricians",
     email: "meadorj@hsd.k12.or.us",
-    headshotURL: "/meadorj.jpg"
+    headshotURL: "/meadorj.jpg",
+    reportsTo: "yellandj@hsd.k12.or.us",
   },
   {
     name: "Daniel Collien",
     title: "Maintenance 2",
     team: "HVAC",
     email: "colliend@hsd.k12.or.us",
-    headshotURL: "/colliend.jpg"
+    headshotURL: "/colliend.jpg",
+    reportsTo: "hicksl@hsd.k12.or.us",
   },
   {
     name: "Erick Chavez-Garcia",
     title: "Maintenance 2",
     team: "HVAC",
     email: "chavezge@hsd.k12.or.us",
-    headshotURL: "/chavezge.jpg"
+    headshotURL: "/chavezge.jpg",
+    reportsTo: "hicksl@hsd.k12.or.us",
   },
   {
     name: "Nico Geerling",
     title: "Maintenance 4",
     team: "HVAC",
     email: "geerlinn@hsd.k12.or.us",
-    headshotURL: "/geerlinn.jpg"
+    headshotURL: "/geerlinn.jpg",
+    reportsTo: "hicksl@hsd.k12.or.us",
+  },
+  {
+    name: "Will Wenzloff",
+    title: "Environmental Health and Safety Manager",
+    team: "Management",
+    email: "wenzlofw@hsd.k12.or.us",
+    headshotURL: "/wenzlofw.png",
+    reportsTo: "petersod@hsd.k12.or.us",
   },
   {
     name: "Raul De La Torre Martinez",
     title: "Maintenance 2",
     team: "Plumbers",
     email: "delatorr@hsd.k12.or.us",
-    headshotURL: "/delatorr.jpg"
+    headshotURL: "/delatorr.jpg",
+    reportsTo: "wenzlofw@hsd.k12.or.us",
   },
   {
     name: "Ronald Nearing",
     title: "Maintenance 4",
     team: "Plumbers",
     email: "nearingr@hsd.k12.or.us",
-    headshotURL: "/nearingr.jpg"
+    headshotURL: "/nearingr.jpg",
+    reportsTo: "wenzlofw@hsd.k12.or.us",
+  },
+  {
+    name: "Mia Hocking",
+    title: "Resource Conservation Manager",
+    team: "Management",
+    email: "hockinmi@hsd.k12.or.us",
+    headshotURL: "/hockinmi.png",
+    reportsTo: "petersod@hsd.k12.or.us",
   },
   {
     name: "Servando Cortes",
     title: "Warehouse 2",
     team: "Movers",
     email: "cortess@hsd.k12.or.us",
-    headshotURL: "/cortess.jpg"
+    headshotURL: "/cortess.jpg",
+    reportsTo: "hockinmi@hsd.k12.or.us",
   },
   {
     name: "Daniel Hyde",
     title: "Maintenance 4",
     team: "Locksmith",
     email: "hyded@hsd.k12.or.us",
-    headshotURL: "/hyded.jpg"
+    headshotURL: "/hyded.jpg",
+    reportsTo: "hicksl@hsd.k12.or.us",
   },
   {
     name: "Robert Keplinger",
     title: "Maintenance 2",
     team: "Carpenters",
     email: "keplingr@hsd.k12.or.us",
-    headshotURL: "/keplingr.jpg"
+    headshotURL: "/keplingr.jpg",
+    reportsTo: "hicksl@hsd.k12.or.us",
   },
   {
     name: "Edward Buck",
     title: "Maintenance 2",
     team: "Carpenters",
     email: "bucke@hsd.k12.or.us",
-    headshotURL: "/bucke.jpg"
+    headshotURL: "/bucke.jpg",
+    reportsTo: "hicksl@hsd.k12.or.us",
   },
   {
     name: "David Delplanche",
     title: "Maintenance 2",
     team: "Carpenters",
     email: "delplada@hsd.k12.or.us",
-    headshotURL: "/delplada.jpg"
+    headshotURL: "/delplada.jpg",
+    reportsTo: "hicksl@hsd.k12.or.us",
   },
   {
     name: "Michael Russ",
     title: "Maintenance 2",
     team: "Carpenters",
     email: "russm@hsd.k12.or.us",
-    headshotURL: "/russm.jpg"
+    headshotURL: "/russm.jpg",
+    reportsTo: "hicksl@hsd.k12.or.us",
   },
   {
     name: "Wayne Cree",
     title: "Maintenance 2",
     team: "Carpenters",
     email: "creew@hsd.k12.or.us",
-    headshotURL: "/creew.jpg"
+    headshotURL: "/creew.jpg",
+    reportsTo: "hicksl@hsd.k12.or.us",
   },
   {
     name: "Eddie Sauceda",
     title: "Groundskeeper 1",
     team: "Grounds",
     email: "saucedae@hsd.k12.or.us",
-    headshotURL: "/saucedae.png"
+    headshotURL: "/saucedae.png",
+    reportsTo: "hicksl@hsd.k12.or.us",
   },
   {
     name: "Leonell Andrade",
     title: "Groundskeeper 1",
     team: "Grounds",
     email: "andradel@hsd.k12.or.us",
-    headshotURL: "/andradel.jpg"
+    headshotURL: "/andradel.jpg",
+    reportsTo: "hicksl@hsd.k12.or.us",
   },
   {
     name: "Juan Delgado Pizano",
     title: "Groundskeeper 1",
     team: "Grounds",
     email: "delgadoj@hsd.k12.or.us",
-    headshotURL: "/delgadoj.jpg"
+    headshotURL: "/delgadoj.jpg",
+    reportsTo: "hicksl@hsd.k12.or.us",
   },
   {
     name: "Raymond Abad",
     title: "Groundskeeper 1",
     team: "Grounds",
     email: "abadr@hsd.k12.or.us",
-    headshotURL: "/abadr.jpg"
+    headshotURL: "/abadr.jpg",
+    reportsTo: "hicksl@hsd.k12.or.us",
   },
   {
     name: "Edward Kehm",
     title: "Groundskeeper 1",
     team: "Grounds",
     email: "kehme@hsd.k12.or.us",
-    headshotURL: "/kehme.jpg"
+    headshotURL: "/kehme.jpg",
+    reportsTo: "hicksl@hsd.k12.or.us",
   },
   {
     name: "Ramiro Arreola Avila",
     title: "Groundskeeper 1",
     team: "Grounds",
     email: "arreolar@hsd.k12.or.us",
-    headshotURL: "/arreolar.jpg"
+    headshotURL: "/arreolar.jpg",
+    reportsTo: "hicksl@hsd.k12.or.us",
   },
   {
     name: "Fabian Gonzalez Magana",
     title: "Groundskeeper 1",
     team: "Grounds",
     email: "gonzalef@hsd.k12.or.us",
-    headshotURL: "/gonzalef.jpg"
+    headshotURL: "/gonzalef.jpg",
+    reportsTo: "hicksl@hsd.k12.or.us",
   },
   {
     name: "Nathan Rosales",
     title: "Groundskeeper 1",
     team: "Grounds",
     email: "rosalesn@hsd.k12.or.us",
-    headshotURL: "/rosalesn.jpg"
+    headshotURL: "/rosalesn.jpg",
+    reportsTo: "hicksl@hsd.k12.or.us",
   },
   {
     name: "Carlos Delorenza",
     title: "Groundskeeper 1",
     team: "Grounds",
     email: "delorenc@hsd.k12.or.us",
-    headshotURL: "/delorenc.jpg"
+    headshotURL: "/delorenc.jpg",
+    reportsTo: "hicksl@hsd.k12.or.us",
   },
   {
     name: "Matthew Wolf",
     title: "Groundskeeper 2",
     team: "Grounds",
     email: "wolfma@hsd.k12.or.us",
-    headshotURL: "/wolfma.jpg"
+    headshotURL: "/wolfma.jpg",
+    reportsTo: "hicksl@hsd.k12.or.us",
   },
   {
     name: "Darrell Fields",
     title: "Groundskeeper 3",
     team: "Grounds",
     email: "fieldsd@hsd.k12.or.us",
-    headshotURL: "/fieldsd.jpg"
+    headshotURL: "/fieldsd.jpg",
+    reportsTo: "hicksl@hsd.k12.or.us",
   },
   {
     name: "Sanford Sutherland",
     title: "Groundskeeper 3",
     team: "Grounds",
     email: "sutherls@hsd.k12.or.us",
-    headshotURL: "/sutherls.jpg"
+    headshotURL: "/sutherls.jpg",
+    reportsTo: "hicksl@hsd.k12.or.us",
   },
   {
     name: "Peter Hrdlicka",
     title: "Groundskeeper 3 - Irrigation and Wetland",
     team: "Grounds",
     email: "hrdlickp@hsd.k12.or.us",
-    headshotURL: "/hrdlickp.jpg"
+    headshotURL: "/hrdlickp.jpg",
+    reportsTo: "hicksl@hsd.k12.or.us",
   },
 ];

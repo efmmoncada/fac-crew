@@ -1,17 +1,14 @@
 import "./App.css";
-import EmployeeCard from "./components/EmployeeCard";
+import OrgChart from "./components/OrgChart";
 import { employees } from "./data";
 
 export default function App() {
   return (
-    <div className="flex flex-col items-center py-4 px-2">
-      <h1 className="text-3xl mb-2">Hillsboro School District - Facilites Trade Crews</h1>
-      <h2 className="text-2xl">Who to See for What</h2>
-      <main className="grid p-4 grid-cols-3 gap-4">
-        {employees.map((employee, i) => (
-          <EmployeeCard key={employee.name} {...employee} />
-        ))}
-      </main>
+    <div className="flex flex-col items-center py-4 px-2 w-full max-w-full overflow-x-hidden">
+
+      <h1 className="text-3xl mb-2">Hillsboro School District - Facilities Trade Crews</h1>
+      <h2 className="text-2xl mb-6">Org Chart</h2>
+      <OrgChart employees={employees} />
     </div>
   );
 }
