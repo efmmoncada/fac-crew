@@ -32,6 +32,111 @@ export const employees: EmployeeInfo[] = [
     headshotURL: "/rayborns.jpg"
   },
   {
+    name: "Jordan Yelland",
+    title: "Supervisor - Electrical Systems",
+    team: "Electricians",
+    email: "yellandj@hsd.k12.or.us",
+    headshotURL: "/yellandj.jpg"
+  },
+  {
+    name: "Kevin Brito",
+    title: "Maintenance 2",
+    team: "Electricians",
+    email: "britok@hsd.k12.or.us",
+    headshotURL: "/britok.jpg"
+  },
+  {
+    name: "John Meador",
+    title: "Maintenance 4",
+    team: "Electricians",
+    email: "meadorj@hsd.k12.or.us",
+    headshotURL: "/meadorj.jpg"
+  },
+  {
+    name: "Daniel Collien",
+    title: "Maintenance 2",
+    team: "HVAC",
+    email: "colliend@hsd.k12.or.us",
+    headshotURL: "/colliend.jpg"
+  },
+  {
+    name: "Erick Chavez-Garcia",
+    title: "Maintenance 2",
+    team: "HVAC",
+    email: "chavezge@hsd.k12.or.us",
+    headshotURL: "/chavezge.jpg"
+  },
+  {
+    name: "Nico Geerling",
+    title: "Maintenance 4",
+    team: "HVAC",
+    email: "geerlinn@hsd.k12.or.us",
+    headshotURL: "/geerlinn.jpg"
+  },
+  {
+    name: "Raul De La Torre Martinez",
+    title: "Maintenance 2",
+    team: "Plumbers",
+    email: "delatorr@hsd.k12.or.us",
+    headshotURL: "/delatorr.jpg"
+  },
+  {
+    name: "Ronald Nearing",
+    title: "Maintenance 4",
+    team: "Plumbers",
+    email: "nearingr@hsd.k12.or.us",
+    headshotURL: "/nearingr.jpg"
+  },
+  {
+    name: "Servando Cortes",
+    title: "Warehouse 2",
+    team: "Movers",
+    email: "cortess@hsd.k12.or.us",
+    headshotURL: "/cortess.jpg"
+  },
+  {
+    name: "Daniel Hyde",
+    title: "Maintenance 4",
+    team: "Locksmith",
+    email: "hyded@hsd.k12.or.us",
+    headshotURL: "/hyded.jpg"
+  },
+  {
+    name: "Robert Keplinger",
+    title: "Maintenance 2",
+    team: "Carpenters",
+    email: "keplingr@hsd.k12.or.us",
+    headshotURL: "/keplingr.jpg"
+  },
+  {
+    name: "Edward Buck",
+    title: "Maintenance 2",
+    team: "Carpenters",
+    email: "bucke@hsd.k12.or.us",
+    headshotURL: "/bucke.jpg"
+  },
+  {
+    name: "David Delplanche",
+    title: "Maintenance 2",
+    team: "Carpenters",
+    email: "delplada@hsd.k12.or.us",
+    headshotURL: "/delplada.jpg"
+  },
+  {
+    name: "Michael Russ",
+    title: "Maintenance 2",
+    team: "Carpenters",
+    email: "russm@hsd.k12.or.us",
+    headshotURL: "/russm.jpg"
+  },
+  {
+    name: "Wayne Cree",
+    title: "Maintenance 2",
+    team: "Carpenters",
+    email: "creew@hsd.k12.or.us",
+    headshotURL: "/creew.jpg"
+  },
+  {
     name: "Eddie Sauceda",
     title: "Groundskeeper 1",
     team: "Grounds",
@@ -121,110 +226,5 @@ export const employees: EmployeeInfo[] = [
     team: "Grounds",
     email: "hrdlickp@hsd.k12.or.us",
     headshotURL: "/hrdlickp.jpg"
-  },
-  {
-    name: "Robert Keplinger",
-    title: "Maintenance 2",
-    team: "Carpenters",
-    email: "keplingr@hsd.k12.or.us",
-    headshotURL: "/keplingr.jpg"
-  },
-  {
-    name: "Daniel Collien",
-    title: "Maintenance 2",
-    team: "HVAC",
-    email: "colliend@hsd.k12.or.us",
-    headshotURL: "/colliend.jpg"
-  },
-  {
-    name: "Edward Buck",
-    title: "Maintenance 2",
-    team: "Carpenters",
-    email: "bucke@hsd.k12.or.us",
-    headshotURL: "/bucke.jpg"
-  },
-  {
-    name: "David Delplanche",
-    title: "Maintenance 2",
-    team: "Carpenters",
-    email: "delplada@hsd.k12.or.us",
-    headshotURL: "/delplada.jpg"
-  },
-  {
-    name: "Kevin Brito",
-    title: "Maintenance 2",
-    team: "Electricians",
-    email: "britok@hsd.k12.or.us",
-    headshotURL: "/britok.jpg"
-  },
-  {
-    name: "Michael Russ",
-    title: "Maintenance 2",
-    team: "Carpenters",
-    email: "russm@hsd.k12.or.us",
-    headshotURL: "/russm.jpg"
-  },
-  {
-    name: "Wayne Cree",
-    title: "Maintenance 2",
-    team: "Carpenters",
-    email: "creew@hsd.k12.or.us",
-    headshotURL: "/creew.jpg"
-  },
-  {
-    name: "Erick Chavez-Garcia",
-    title: "Maintenance 2",
-    team: "HVAC",
-    email: "chavezge@hsd.k12.or.us",
-    headshotURL: "/chavezge.jpg"
-  },
-  {
-    name: "Raul De La Torre Martinez",
-    title: "Maintenance 2",
-    team: "Plumbers",
-    email: "delatorr@hsd.k12.or.us",
-    headshotURL: "/delatorr.jpg"
-  },
-  {
-    name: "John Meador",
-    title: "Maintenance 4",
-    team: "Electricians",
-    email: "meadorj@hsd.k12.or.us",
-    headshotURL: "/meadorj.jpg"
-  },
-  {
-    name: "Ronald Nearing",
-    title: "Maintenance 4",
-    team: "Plumbers",
-    email: "nearingr@hsd.k12.or.us",
-    headshotURL: "/nearingr.jpg"
-  },
-  {
-    name: "Daniel Hyde",
-    title: "Maintenance 4",
-    team: "Locksmith",
-    email: "hyded@hsd.k12.or.us",
-    headshotURL: "/hyded.jpg"
-  },
-  {
-    name: "Nico Geerling",
-    title: "Maintenance 4",
-    team: "HVAC",
-    email: "geerlinn@hsd.k12.or.us",
-    headshotURL: "/geerlinn.jpg"
-  },
-  {
-    name: "Jordan Yelland",
-    title: "Supervisor - Electrical Systems",
-    team: "Electricians",
-    email: "yellandj@hsd.k12.or.us",
-    headshotURL: "/yellandj.jpg"
-  },
-  {
-    name: "Servando Cortes",
-    title: "Warehouse 2",
-    team: "Movers",
-    email: "cortess@hsd.k12.or.us",
-    headshotURL: "/cortess.jpg"
   },
 ];
