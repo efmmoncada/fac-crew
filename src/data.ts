@@ -4,7 +4,7 @@ export type EmployeeInfo = {
   headshotURL: string;
   name: string;
   title: string;
-  team: Team;
+  team?: Team;
   email: string;
   reportsTo?: string; // email of manager; omit for the top of the chart
 };
@@ -28,7 +28,6 @@ export const employees: EmployeeInfo[] = [
   {
     name: "Lisa Hicks",
     title: "Facilities Manager",
-    team: "Management",
     email: "hicksl@hsd.k12.or.us",
     headshotURL: "/hicksl.jpg",
     reportsTo: "petersod@hsd.k12.or.us",
@@ -44,7 +43,6 @@ export const employees: EmployeeInfo[] = [
   {
     name: "Jordan Yelland",
     title: "Electrical Systems Manager",
-    team: "Electricians",
     email: "yellandj@hsd.k12.or.us",
     headshotURL: "/yellandj.jpg",
     reportsTo: "petersod@hsd.k12.or.us",
@@ -92,7 +90,6 @@ export const employees: EmployeeInfo[] = [
   {
     name: "Will Wenzloff",
     title: "Environmental Health and Safety Manager",
-    team: "Management",
     email: "wenzlofw@hsd.k12.or.us",
     headshotURL: "/wenzlofw.png",
     reportsTo: "petersod@hsd.k12.or.us",
@@ -116,7 +113,6 @@ export const employees: EmployeeInfo[] = [
   {
     name: "Mia Hocking",
     title: "Resource Conservation Manager",
-    team: "Management",
     email: "hockinmi@hsd.k12.or.us",
     headshotURL: "/hockinmi.png",
     reportsTo: "petersod@hsd.k12.or.us",
@@ -281,4 +277,12 @@ export const employees: EmployeeInfo[] = [
     headshotURL: "/hrdlickp.jpg",
     reportsTo: "hicksl@hsd.k12.or.us",
   },
+  {
+    name: "Nick Rawls",
+    title: "Courier",
+    team: "Courier",
+    email: "rawlsn@hsd.k12.or.us",
+    headshotURL: "/rawlsn.png",
+    reportsTo: "hockinmi@hsd.k12.or.us",
+  }
 ];

@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "@nextui-org/react": "^2.4.8",
-    "framer-motion": "^11.11.9"
+    "framer-motion": "^11.11.9",
+    "react-d3-tree": "^3.6.6"
   }
 }

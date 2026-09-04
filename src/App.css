@@ -9,3 +9,8 @@ html, body, #root {
   max-width: 100%;
   overflow-x: hidden;
 }
+
+.rd3t-link {
+  stroke: #666 !important;
+  stroke-width: 1.5px;
+}
