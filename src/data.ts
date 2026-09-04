@@ -1,4 +1,4 @@
-type Team = "Electricians" | "Grounds" | "Carpenters" | "Movers" | "HVAC" | "Plumbers" | "Locksmith" | "Management";
+type Team = "Electricians" | "Grounds" | "Carpenters" | "Movers" | "HVAC" | "Plumbers" | "Locksmith" | "Management" | "Courier";
 
 export type EmployeeInfo = {
   headshotURL: string;
