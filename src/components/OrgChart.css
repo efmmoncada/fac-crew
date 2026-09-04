@@ -1,88 +1,111 @@
 .org-card {
-  width: 260px;         /* was 200 */
-  min-height: 230px;    /* was 180, scaled with the rest */
-  padding: 14px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin: 0 auto;
+    width: 260px; /* was 200 */
+    min-height: 230px; /* was 180, scaled with the rest */
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease,
+        border-color 0.15s ease;
+    cursor: pointer;
+    border: 1px solid transparent;
+    margin-top: 8px;
+}
+
+.org-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+    border-color: #666;
 }
 
 .org-card-img {
-  width: 92px;          /* was 72 */
-  height: 92px;
-  border-radius: 50%;
-  object-fit: cover;
-  flex-shrink: 0;
+    width: 92px; /* was 72 */
+    height: 92px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
 }
 
 .org-card-fallback {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #444;
-  font-size: 26px;      /* was 20 */
-  font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #444;
+    font-size: 26px; /* was 20 */
+    font-weight: bold;
 }
 
 .org-card-body {
-  margin-top: 12px;
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
 }
 
 .org-card-name {
-  font-weight: bold;
-  font-size: 18px;      /* was 16 */
-  line-height: 1.25;
+    font-weight: bold;
+    font-size: 18px; /* was 16 */
+    line-height: 1.25;
 }
 
 .org-card-title {
-  font-style: italic;
-  font-size: 15px;      /* was 13 */
-  opacity: 0.85;
-  line-height: 1.25;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+    font-style: italic;
+    font-size: 15px; /* was 13 */
+    opacity: 0.85;
+    line-height: 1.25;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .org-card-team {
-  font-size: 14px;      /* was 12 */
-  opacity: 0.7;
-  margin-top: 5px;
+    font-size: 14px; /* was 12 */
+    opacity: 0.7;
+    margin-top: 5px;
 }
 
 .rd3t-link {
-  stroke: #666 !important;
-  stroke-width: 1.5px;
+    stroke: #666 !important;
+    stroke-width: 1.5px;
 }
 
 .team-node {
-  width: 200px;
-  min-height: 70px;
-  border: 1px dashed #777;
-  border-radius: 10px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  cursor: pointer;
-  margin: 0 auto;
+    width: 200px;
+    min-height: 70px;
+    border: 1px dashed #777;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 auto;
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease,
+        border-color 0.15s ease;
+}
+
+.team-node:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+    border-color: #aaa;
 }
 
 .team-node-label {
-  font-weight: bold;
-  font-size: 16px;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 .team-node-count {
-  font-size: 12px;
-  opacity: 0.7;
-  margin-top: 4px;
+    font-size: 12px;
+    opacity: 0.7;
+    margin-top: 4px;
 }

@@ -31,6 +31,7 @@ export default function OrgChart({ employees }: Props) {
         renderCustomNodeElement={(props) => <OrgChartNode {...props} />}
         nodeSize={{ x: 280, y: 280 }}
         separation={{ siblings: 1, nonSiblings: 2 }}
+        initialDepth={2}
       />
     </div>
   );
