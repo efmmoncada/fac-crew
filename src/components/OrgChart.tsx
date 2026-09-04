@@ -28,9 +28,10 @@ export default function OrgChart({ employees }: Props) {
         pathFunc="diagonal"
         collapsible
         zoomable
+        zoom={0.6}
         renderCustomNodeElement={(props) => <OrgChartNode {...props} />}
         nodeSize={{ x: 280, y: 280 }}
-        separation={{ siblings: 1, nonSiblings: 2 }}
+        separation={{ siblings: 1, nonSiblings: 1.5 }}
         initialDepth={2}
       />
     </div>
