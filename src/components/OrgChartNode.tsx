@@ -1,6 +1,7 @@
 import { CustomNodeElementProps } from "react-d3-tree";
 import EmployeeCard from "./EmployeeCard";
 import { TreeNode } from "../buildTreeData";
+import "./OrgChart.css";
 
 export default function OrgChartNode({
   nodeDatum,
