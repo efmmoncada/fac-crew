@@ -37,9 +37,10 @@ export function buildTreeData(employees: EmployeeInfo[]): TreeNode[] {
 
     const groups = new Map<string, EmployeeInfo[]>();
     for (const kid of kids) {
-      const list = groups.get(kid.team) ?? [];
+      const teamKey = kid.team ?? "Unassigned"
+      const list = groups.get(teamKey) ?? [];
       list.push(kid);
-      groups.set(kid.team, list);
+      groups.set(teamKey, list);
     }
 
     const result: TreeNode[] = [];
