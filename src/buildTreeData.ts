@@ -10,12 +10,18 @@ export interface TreeNode {
 const GROUP_MIN_SIZE = 1;
 const MIN_DEPTH_TO_GROUP = 2; // don't group the root's direct reports (depth 1)
 
-export function buildTreeData(employees: EmployeeInfo[]): TreeNode[] {
-  const byEmail = new Map(employees.map((e) => [e.email, e]));
+export function buildTreeData(
+  employees: EmployeeInfo[],
+  excludeEmails: string[] = []
+): TreeNode[] {
+  const excludeSet = new Set(excludeEmails);
+  const filtered = employees.filter((e) => !excludeSet.has(e.email));
+
+  const byEmail = new Map(filtered.map((e) => [e.email, e]));
   const childrenMap = new Map<string, EmployeeInfo[]>();
   const roots: EmployeeInfo[] = [];
 
-  for (const emp of employees) {
+  for (const emp of filtered) {
     if (emp.reportsTo === emp.email) {
       console.error(`${emp.name} lists themselves as their own manager`);
       roots.push(emp);
@@ -37,7 +43,7 @@ export function buildTreeData(employees: EmployeeInfo[]): TreeNode[] {
 
     const groups = new Map<string, EmployeeInfo[]>();
     for (const kid of kids) {
-      const teamKey = kid.team ?? "Unassigned"
+      const teamKey = kid.team ?? "Unassigned";
       const list = groups.get(teamKey) ?? [];
       list.push(kid);
       groups.set(teamKey, list);
