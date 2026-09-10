@@ -78,14 +78,6 @@ export const employees: EmployeeInfo[] = [
     reportsTo: "hicksl@hsd.k12.or.us",
   },
   {
-    name: "Erick Chavez-Garcia",
-    title: "Maintenance 2",
-    team: "HVAC",
-    email: "chavezge@hsd.k12.or.us",
-    headshotURL: "/chavezge.jpg",
-    reportsTo: "hicksl@hsd.k12.or.us",
-  },
-  {
     name: "Nico Geerling",
     title: "Maintenance 4",
     team: "HVAC",
@@ -130,14 +122,6 @@ export const employees: EmployeeInfo[] = [
     email: "cortess@hsd.k12.or.us",
     headshotURL: "/cortess.jpg",
     reportsTo: "hockinmi@hsd.k12.or.us",
-  },
-  {
-    name: "Daniel Hyde",
-    title: "Maintenance 4",
-    team: "Locksmith",
-    email: "hyded@hsd.k12.or.us",
-    headshotURL: "/hyded.jpg",
-    reportsTo: "hicksl@hsd.k12.or.us",
   },
   {
     name: "Robert Keplinger",
@@ -196,14 +180,6 @@ export const employees: EmployeeInfo[] = [
     reportsTo: "hicksl@hsd.k12.or.us",
   },
   {
-    name: "Juan Delgado Pizano",
-    title: "Groundskeeper 1",
-    team: "Grounds",
-    email: "delgadoj@hsd.k12.or.us",
-    headshotURL: "/delgadoj.jpg",
-    reportsTo: "hicksl@hsd.k12.or.us",
-  },
-  {
     name: "Raymond Abad",
     title: "Groundskeeper 1",
     team: "Grounds",
@@ -222,10 +198,10 @@ export const employees: EmployeeInfo[] = [
   {
     name: "Ramiro Arreola Avila",
     title: "Groundskeeper 1",
-    team: "Grounds",
+    team: "IPM",
     email: "arreolar@hsd.k12.or.us",
     headshotURL: "/arreolar.jpg",
-    reportsTo: "hicksl@hsd.k12.or.us",
+    reportsTo: "wenzlofw@hsd.k12.or.us",
   },
   {
     name: "Fabian Gonzalez Magana",
@@ -289,6 +265,14 @@ export const employees: EmployeeInfo[] = [
     team: "Courier",
     email: "rawlsn@hsd.k12.or.us",
     headshotURL: "/rawlsn.png",
+    reportsTo: "hockinmi@hsd.k12.or.us",
+  },
+  {
+    name: "Kory Brookens",
+    title: "Warehouse 3",
+    team: "Movers",
+    email: "brookenk@hsd.k12.or.us",
+    headshotURL: "/brookenk.png",
     reportsTo: "hockinmi@hsd.k12.or.us",
   },
   {
