@@ -17,14 +17,14 @@ export const employees: EmployeeInfo[] = [
     email: "petersod@hsd.k12.or.us",
     headshotURL: "petersod.png",
   },
-  // {
-  //   name: "Sydney Larrison",
-  //   title: "Department Administrative Support 3",
-  //   team: "Management",
-  //   email: "larrisos@hsd.k12.or.us",
-  //   headshotURL: "/larrisos.jpg",
-  //   reportsTo: "petersod@hsd.k12.or.us",
-  // },
+  {
+    name: "Sydney Larrison",
+    title: "Department Administrative Support 3 - Maintenance",
+    // team: "Management",
+    email: "larrisos@hsd.k12.or.us",
+    headshotURL: "/larrisos.jpg",
+    // reportsTo: "petersod@hsd.k12.or.us",
+  },
   {
     name: "Lisa Hicks",
     title: "Facilities Manager",
@@ -32,14 +32,20 @@ export const employees: EmployeeInfo[] = [
     headshotURL: "/hicksl.jpg",
     reportsTo: "petersod@hsd.k12.or.us",
   },
-  // {
-  //   name: "Summer Rayborn",
-  //   title: "Department Administrative Support 2",
-  //   team: "Management",
-  //   email: "rayborns@hsd.k12.or.us",
-  //   headshotURL: "/rayborns.jpg",
-  //   reportsTo: "hicksl@hsd.k12.or.us",
-  // },
+  {
+    name: "Summer Rayborn",
+    title: "Department Administrative Support 2 - Work Order System",
+    // team: "Management",
+    email: "rayborns@hsd.k12.or.us",
+    headshotURL: "/rayborns.jpg",
+    // reportsTo: "hicksl@hsd.k12.or.us",
+  },
+  {
+    name: "Sandra Heredia",
+    title: "Department Administrative Support 3 - Custodial Services",
+    email: "heredias@hsd.k12.or.us",
+    headshotURL: "/heredias.png"
+  },
   {
     name: "Jordan Yelland",
     title: "Electrical Systems Manager",
@@ -284,5 +290,12 @@ export const employees: EmployeeInfo[] = [
     email: "rawlsn@hsd.k12.or.us",
     headshotURL: "/rawlsn.png",
     reportsTo: "hockinmi@hsd.k12.or.us",
-  }
+  },
+  {
+    name: "Ray Lara",
+    title: "Custodial Services Manager",
+    email: "larar@hsd.k12.or.us",
+    headshotURL: "/larar.png",
+    reportsTo: "petersod@hsd.k12.or.us"
+  },
 ];

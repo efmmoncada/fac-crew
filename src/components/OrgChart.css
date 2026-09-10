@@ -109,3 +109,15 @@
     opacity: 0.7;
     margin-top: 4px;
 }
+
+.support-row {
+  position: absolute;
+  display: flex;
+  gap: 20px;
+  top: -150px;       /* level with the tree's root row — tune against where Dave lands */
+  left: -1350px;     /* offset to the right of center — tune to taste */
+}
+
+.support-card-wrapper .org-card {
+  border-style: dashed;   /* optional: visually signal "not in the reporting line" */
+}
